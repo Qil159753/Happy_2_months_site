@@ -14,3 +14,37 @@ body {
 .gallery img:hover {
     transform: scale(1.1);
 }
+.stats-container {
+    margin: 30px auto;
+    width: 80%;
+    max-width: 500px;
+}
+
+.xp-bar-border {
+    height: 25px;
+    width: 100%;
+    border: 2px solid #d4af37;
+    border-radius: 15px;
+    background: #333;
+    overflow: hidden;
+}
+
+.xp-bar-fill {
+    height: 100%;
+    width: 20%; /* 2 months out of 10 for the 1-year goal */
+    background: linear-gradient(90deg, #d4af37, #f0e68c);
+    box-shadow: 0 0 10px #d4af37;
+    animation: loadBar 3s ease-out;
+}
+
+@keyframes loadBar {
+    from { width: 0%; }
+    to { width: 20%; }
+}
+
+.perk-text {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 10px;
+    color: #f0e68c;
+}
