@@ -1,0 +1,16 @@
+body {
+    background-color: #1a1a1a;
+    color: #d4af37; /* Gold color */
+    font-family: 'Garamond', serif;
+    text-align: center;
+}
+.gallery img {
+    width: 200px;
+    border: 2px solid #d4af37;
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+}
